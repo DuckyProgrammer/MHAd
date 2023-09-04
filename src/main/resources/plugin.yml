@@ -1,0 +1,8 @@
+name: MHAd
+version: '${project.version}'
+main: me.duckyprogrammer.mhad.MHAd
+api-version: '1.20'
+commands:
+  admessage:
+    aliases: [ad, admsg]
+    description: Sends the ad message to the player.

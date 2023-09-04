@@ -1,5 +1,6 @@
 package me.duckyprogrammer.mhad;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class MHAd extends JavaPlugin {
@@ -14,6 +15,8 @@ public final class MHAd extends JavaPlugin {
         getCommand("admessage").setExecutor(new AdCommand());
         getConfig().options().copyDefaults();
         saveDefaultConfig();
+        int pluginId = 19724; // <-- Replace with the id of your plugin!
+        Metrics metrics = new Metrics(this, pluginId);
     }
 
     @Override
